@@ -1,0 +1,18 @@
+EXERCÍCIOS
+==========
+
+1) Crie um arquivo "cliente.html" que contenha um formulário com nome, email e telefone.
+Crie um arquivo "cliente.js" que represente a classe para guardar um cliente.
+No arquivo "cadastro.js", faça o código para salvar o cliente no localStorage em uma chave
+"clientes", como um array de objetos.
+
+2) Crie um arquivo "listagem.html" que use o arquivo "listagem.js" para listar,
+em uma tabela os clientes salvos no localStorage.
+
+3) Crie um botão "Clonar" que duplique um elemento da listagem.
+
+4) Crie um botão "Alterar" que abra o cliente selecionado para alteração.
+Dica: salve o cliente selecionado no sessionStorage.
+Usar location.href = 'alterar.html' para enviar para o arquivo.
+
+5) Crie um botão "Remover" que remova o cliente selecionado.

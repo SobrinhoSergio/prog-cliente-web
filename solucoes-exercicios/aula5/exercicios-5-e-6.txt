@@ -1,0 +1,8 @@
+5) Crie uma classe Microondas que contenha as *propriedades* (não confundir com atributos)
+ligado (bool) e potenciaEmWatts (number). Um microondas não pode ter a potência acima de 3000
+Watts quando estiver ligado, nem pode ter a potência ajustada quando estiver desligado.
+Use uma exceção para indicar estados inválidos.
+
+6) Crie um método programar(), em Microondas, que receba um valor em segundos e uma potência em watts.
+O método deve fazer o microondas ser ligado com a potência indicada durante o número de segundos
+fornecido e então desligá-lo. DICA: Use setTimeout.

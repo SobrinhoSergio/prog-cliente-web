@@ -1,0 +1,9 @@
+HOMEWORK
+
+1) Atualizar a totalização dos produtos ao remover uma ou mais linhas.
+
+2) Fazer um tela para alterar um produto.
+
+Dica: Guarde o id ou o produto no sessionStorage/localStorage e o exiba na página
+      de alteração (ex. "alterar.html"), pegando os dados do mesmo. Quando salvar,
+      substitua o objeto com os dados novos.

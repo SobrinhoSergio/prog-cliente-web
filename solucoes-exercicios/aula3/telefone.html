@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefone</title>
+</head>
+<body>
+    <script>
+        function Telefone( ddd, numero ) {
+            this.ddd = ddd;
+            this.numero = numero;
+            // Exercício:
+            // Crie um método formatar() para retornar o
+            // telefone formatado como "(ddd) numero".
+            this.formatar = function() {
+                return '(' + this.ddd + ') ' + this.numero;
+            };
+        }
+
+        const t = new Telefone( '22', '2527-1727' );
+        console.log( t.formatar() );
+    </script>
+</body>
+</html>

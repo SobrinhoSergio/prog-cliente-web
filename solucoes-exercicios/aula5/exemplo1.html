@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="ok" >Ok</button>
+    <button id="ok2" >Ok2</button>
+    <button id="adicionar" >Adicionar</button>
+    <button id="remover" >Remover</button>
+    <output id="saida" ></output>
+    <script>
+        var contagem = 0;
+        function clicarOk( ev ) {
+            document.getElementById( 'saida' ).innerText =
+                'Você clicou em ' + ev.target.innerText +
+                    ( ' ' + ++contagem + ' vezes' );
+            console.log( ev );
+        }
+        function clicarAdicionar( ev ) {
+            document.getElementById( 'ok' )
+                .addEventListener( 'click', clicarOk );
+            // document.getElementById( 'ok2' )
+            //     .addEventListener( 'click', clicarOk );
+        }
+        function clicarRemover( ev ) {
+            document.getElementById( 'ok' )
+                .removeEventListener( 'click', clicarOk );
+            // document.getElementById( 'ok2' )
+            //     .removeEventListener( 'click', clicarOk );
+        }
+
+        document.getElementById( 'adicionar' )
+            .addEventListener( 'click', clicarAdicionar );
+        document.getElementById( 'remover' )
+            .addEventListener( 'click', clicarRemover );
+    </script>
+</body>
+</html>

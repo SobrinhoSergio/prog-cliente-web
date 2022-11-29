@@ -1,0 +1,38 @@
+1) Crie um formulário que permita adicionar telefones em uma tabela.
+Para isso, utilize uma classe Telefone e coloque os dados do telefone
+informado em um objeto dessa classe. Acrescente cada objeto em um
+array de telefones. Crie um arquivo "telefone.js" só para a declaração
+da classe Telefone e faça o restante do conteúdo em "index.js".
+
+2) Faça com que a tabela sempre exiba os telefones de forma ordenada,
+isto é, mantenha a ordenação ao inserir um telefone. A ordenação
+deve considerar tanto o DDD quanto o número.
+
+3) Acrescente à tabela uma coluna "
+" que contenha âncoras (links)
+para ligar para o telefone completo (com ddd e número). Para isso,
+utilize no link "callto:" mais o número. Exemplo: "callto:2225271727".
+Exiba o texto "Ligar" no link de cada telefone.
+
+
+4) [DESAFIO] Crie uma coluna "Remoção" e, em cada linha da tabela, crie um botão
+"Remover" que remova a respectiva linha. Para isso, considere que:
+i) a função disparada quando o botão é clicado possui um parâmetro que
+representa o evento (ex. "event") e esse parâmetro possui uma propriedade
+"target" que representa o botão clicado;
+ii) Qualquer elemento do DOM possui a propriedade parentElement, para
+pegar o elemento pai do mesmo.
+iii) Para remover um elemento qualquer do DOM, você pode invocar o
+método remove() deste.
+
+HOMEWORK (DESAFIO):
+Faça com que a lista possa ser filtrada por um texto informado. Por
+exemplo, ao informar "22" apenas os telefones com esse prefixo
+devem ser exibidos. Caso o usuário não informe nenhum texto e tente
+filtrar, todos os telefones existentes devem ser exibidos.
+
+Dica: Crie um novo array de telefones para exibição e mantenha o
+original intacto.
+
+**DESAFIO = Conteúdo não lecionado completamente ainda. Não fique
+preocupado se não conseguir concluir. :)

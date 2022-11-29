@@ -1,0 +1,15 @@
+tbody tr:nth-child(odd) {
+    background-color: azure;
+}
+
+tbody tr:nth-child(even) {
+    background-color: bisque;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+.selecionado  {
+    background-color: yellow !important;
+}

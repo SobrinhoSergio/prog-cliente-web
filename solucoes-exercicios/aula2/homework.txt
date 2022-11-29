@@ -1,0 +1,11 @@
+EXERCÍCIOS PARA CASA
+
+1) Crie um formulário que permita adicionar números em uma lista.
+Para isso, o usuário deve informar um número qualquer e clicar
+em um botão "Adicionar", que deve adicionar o número à lista.
+Crie um botão "Ordenar", capaz de ordenar os valores da lista.
+Dica: utilize um array para manter os números.
+
+2) Adicione um checkbox "Decrescente" que, se estiver marcado,
+faça com que a lista de números seja apresentada em ordem decrescente,
+ao clicar em "Ordenar".

@@ -1,0 +1,17 @@
+1. Crie um arquivo "telefone.js" que contenha
+uma classe que represente um Telefone e
+contenha "ddd" e "numero" e um método
+formatar() que retorne o mesmo no formato
+"(ddd) numero". Então, crie uma
+página "telefones.html" que contenha um array
+de telefones e produza uma tabela com os mesmos.
+Exiba os telefones de maneira formatada.
+
+DICA: Pode-se usar a propriedade innerHTML para incluir
+      elementos HTML dentro de outros.
+
+2) Crie na página anterior um formulário que
+permita adicionar um telefone à tabela. Adicione-os
+tanto no array quanto na tabela.
+
+

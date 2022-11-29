@@ -1,0 +1,4 @@
+Exercício - HOMEWORK - Modificação do Exercício 5
+
+Colocar a imagem em tamanho menor e, ao passar o mouse, amplicar a imagem.
+Quando retirar o mouse, voltar para o tamanho pequeno.

@@ -1,0 +1,15 @@
+1) Crie um formulário em que seja possível entrar com dois números e
+um operador matemático, sendo este selecionado dos seguintes valores:
+"Adição", "Subtração", "Multiplicação" e "Divisão". Na caixa de seleção,
+represente as operações pelos seus símbolos ("+", ""-", "*", "/").
+Faça com que o botão "Calcular" dispare uma outra função que receba
+os números e o operador e retorne o resultado. Obtenha o resultado
+da função e o exiba no formulário.
+
+Dica: Crie um elemento <output> e use sua propriedade innerText para
+      definir seu valor.
+
+
+2) Adicione a operação de "Potência" ao formulário, que pode ser
+representada pelo símbolo "**".
+

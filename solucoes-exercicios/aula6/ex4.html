@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="texto">Texto:</label>
+    <input type="text" id="texto">
+    <button id="adicionar" >Adicionar</button>
+    <div id="conteudo" ></div>
+    <script>
+        document.getElementById( 'adicionar' ).addEventListener( 'click',
+            function( ev ) {
+                const nome = document.getElementById( 'texto' ).value;
+                fetch( 'https://pokeapi.co/api/v2/pokemon/' + nome )
+                    .then( function( resposta ) {
+                        return resposta.json();
+                    } )
+                    .then( function( pokemon ) {
+                        adicionarPokemon( pokemon );
+                    } );
+            });
+
+        function adicionarPokemon( pokemon ) {
+            // <div> <img src="" /> <h2></h2> </div>
+            const conteudo = document.getElementById( 'conteudo' );
+
+            const div = document.createElement( 'div' );
+
+            const img = document.createElement( 'img' );
+            img.setAttribute( 'src', pokemon.sprites.front_default );
+            img.setAttribute( 'alt', pokemon.name );
+            div.appendChild( img ); // Acrescenta a imagem à div
+
+            const h2 = document.createElement( 'h2' );
+            h2.innerText = pokemon.name;
+            div.appendChild( h2 ); // Acrescenta o h2 à div
+
+            conteudo.appendChild( div );
+        }
+    </script>
+</body>
+</html>
